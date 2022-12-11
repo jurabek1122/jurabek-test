@@ -1,4 +1,9 @@
+import { useNavigate } from 'react-router-dom'
+
 const NavControl = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="nav-control">
       <svg
@@ -7,6 +12,7 @@ const NavControl = () => {
         viewBox="0 0 60 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={() => navigate(-1)}
       >
         <path
           d="M0 30C0 5.4 5.4 0 30 0C54.6 0 60 5.4 60 30C60 54.6 54.6 60 30 60C5.4 60 0 54.6 0 30Z"
@@ -19,13 +25,14 @@ const NavControl = () => {
           fill="white"
         />
       </svg>
-      <p>Назад</p>
+      <p onClick={() => navigate(-1)}>Назад</p>
       <svg
         width="60"
         height="60"
         viewBox="0 0 60 60"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={() => navigate('/')}
       >
         <path
           d="M0 30C0 5.4 5.4 0 30 0C54.6 0 60 5.4 60 30C60 54.6 54.6 60 30 60C5.4 60 0 54.6 0 30Z"
@@ -39,7 +46,7 @@ const NavControl = () => {
           stroke-linejoin="round"
         />
       </svg>
-      <p>Домой</p>
+      <p onClick={() => navigate('/')}>Домой</p>
     </div>
   );
 };

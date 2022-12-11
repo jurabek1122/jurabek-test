@@ -1,11 +1,15 @@
 import logo from "../assets/images/logo.png";
 import call from "../assets/images/call.png";
+import { useNavigate } from 'react-router-dom'
 
 const Header = () => {
+
+  const navigate = useNavigate()
+  
   return (
     <div className="header">
       <div className="logo">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" onClick={() => navigate('/')} />
         <svg
           width="4"
           height="40"
