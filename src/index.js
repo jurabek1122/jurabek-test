@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import './style.css'
+import './responsive.css'
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

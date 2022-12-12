@@ -144,14 +144,13 @@
 .uslugi div{
     display: flex;
     flex-wrap: wrap;
-    width: 940px;
-    margin: 100px auto;
+    margin: 5% 0 0 7%;
 }
 .uslugi .nav-control {
-    margin-left: 40%;
+    margin: 10% 0 0 35%;
 }
 .uslugi a {
-    width: 450px;
+    width: 400px;
     height: 70px;
     background: linear-gradient(180deg, #312783 0%, #3D3385 100%);
     border-radius: 20px;
@@ -181,12 +180,14 @@
 }
 /* O NAS */
 .about,
+.uslugi,
 .skidka,
 .score,
 .price-list,
 .prices,
 .skidka-details,
 .galery,
+.galery-foto,
 .our-doctors,
 .doctors,
 .doctor-details {
@@ -202,6 +203,7 @@
 .prices h3,
 .skidka-details h3,
 .galery h3,
+.galery-foto h3,
 .our-doctors h3,
 .doctors h3 {
     height: 38px;
@@ -214,7 +216,7 @@
     margin-bottom: 20px;
 }
 .about > p {
-    height: 400px;
+    height: 340px;
     font-family: 'Myriad Pro';
     font-style: normal;
     font-weight: 400;
@@ -232,16 +234,17 @@
 }
 .about > p::-webkit-scrollbar-track {
     background-color: #D6D6D6;
+    width: 10px;
     margin-left: 15px !important;
-
 }
 .about > p::-webkit-scrollbar-thumb {
     background-color: #382E84;
+    width: 10px;
     margin-left: 15px !important;
 }  
 /* SKIDKA  */
 .swiper {
-    width: 1000px;
+    width: 100%;
     height: 415px;
     background: #FFFFFF;
 }
@@ -274,6 +277,9 @@
 }
 .skidka-details .swiper {
     height: 200px;
+}
+.skidka-details .swiper-slide {
+    cursor: pointer;
 }
 .skidka-details p {
     font-family: 'Myriad Pro';
@@ -355,7 +361,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    height: 414px;
+    height: 360px;
 }
 .score-card img {
     height: 170px;
@@ -536,11 +542,11 @@
 }
 .price-list a {
     width: 400px;
-    height: 50px;
+    height: 45px;
     background: linear-gradient(180deg, #312783 0%, #3D3385 100%);
     border-radius: 20px;
     color: #FFFFFF;
-    margin: 8px auto;
+    margin: 6px auto;
     text-decoration: none;
     font-family: 'Myriad Pro';
     font-style: normal;
@@ -549,7 +555,7 @@
     line-height: 36px;
     align-items: center;
     text-align: center;
-    padding: 7px 0;
+    padding: 2px 0;
 }
 .prices div {
     display: flex;
@@ -557,7 +563,7 @@
 }
 .prices a {
     width: 297px;
-    height: 70px;
+    height: 58px;
     background: #D8E3FF;
     mix-blend-mode: normal;
     border-radius: 20px;
@@ -578,6 +584,9 @@
 /* GALEREYA */
 .galery .swiper {
     height: 500px;
+}
+.galery-foto .swiper {
+    height: 80vh;
 }
 .galery-card {
     background: #FFFFFF;
@@ -689,10 +698,8 @@
     justify-content: space-between;
     margin-top: 40px;
 }
-.doctors-info div span {
-    display: flex;
-}
 .doctors-info div svg {
+    display: flex;
     margin-right: 5px;
 }
 .doctors-info div p {
@@ -712,11 +719,12 @@
     display: flex;
     flex-direction: row;
 }
-.doctor-left {
+.doctor-left,
+.doctor-left div {
     display: flex;
     flex-direction: column;
     width: 200px;
-    padding: 0 10px
+    /* padding: 0 10px */
 }
 .btn1 {
     height: 50px;
@@ -744,6 +752,9 @@
     color: #312783;;
     background: #FFFFFF;
     border-radius: 10px;
+}
+.right-side {
+    padding: 0 10px
 }
 .right-side h4 {
     width: 578px;
@@ -874,5 +885,4 @@
     top: 130px;
     left: -30px;
     color: #E30613;
-
 }

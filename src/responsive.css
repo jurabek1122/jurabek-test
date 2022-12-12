@@ -1,0 +1,466 @@
+
+@media screen and ( 600px < width < 900px ) {
+    .header {
+        padding: 12px 20px;
+    }
+    .call span, .call p {
+        display: none;
+    }
+    .home-card {
+        margin-bottom: 15px;
+    }
+    .uslugi {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 90vh;
+        padding: 0 20%;
+    }
+    .uslugi div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 70%!important;
+    }
+    .uslugi .nav-control {
+        margin-left: 20%;
+        display: flex;
+        flex-direction: row;
+    }
+    .about {
+        width: 100%;
+        padding: 10% 5%;
+    }
+    .about > p {
+        height: 650px;
+        margin-bottom: 12%;
+    }
+    .our-doctors {
+        width: 100%;
+    }
+    .our-doctors .swiper {
+        width: 800px;
+        height: 415px;
+        background: #FFFFFF;
+    }
+    .skidka,
+    .galery,
+    .doctors,
+    .galery-foto,
+    .score,
+    .price-list,
+    .prices,
+    .doctor-details,
+    .our-doctors {
+        width: 97%;
+        margin-top: 50px;
+    }
+    .our-doctors .swiper,
+    .doctors .swiper,
+    .skidka .swiper,
+    .galery .swiper,
+    .galery-foto .swiper,
+    .score .swiper {
+        width: 97%!important;
+        margin: 0 10px 40% 10px;
+    }
+    .our-doctors h3,
+    .doctor-details,
+    .doctors h3,
+    .skidka h3,
+    .skidka-details h3,
+    .galery h3,
+    .galery-foto h3,
+    .score h3,
+    .prices h3 {
+        margin: 20px 0 30px 20px;
+    }
+    .skidka .swiper-slide,
+    .skidka-details .swiper-slide,
+    .galery .swiper-slide,
+    .galery-foto .swiper-slide,
+    .score .swiper-slide {
+        width: 47.5%!important;
+        margin: 0 10px;
+    }
+    .skidka .swiper-slide img,
+    .skidka-details .swiper-slide img,
+    .galery .swiper-slide img,
+    .galery-foto .swiper-slide img,
+    .score .swiper-slide img {
+        width: 100%!important;
+    }
+    .skidka .swiper-button-next::after,
+    .skidka-details .swiper-button-next::after,
+    .galery .swiper-button-next::after,
+    .galery-foto .swiper-button-next::after,
+    .score .swiper-button-next::after {
+        position: absolute;
+        left: 2px;
+    }
+    .skidka-details {
+        width: 100%;
+        height: 1050px;
+        padding: 20px;
+    }
+    .skidka-details .swiper  {
+        height: 250px;
+        margin-bottom: 27%;
+    }
+    .skidka-details p {
+        margin: 30px 20px;
+    }
+    .skidka-details .skidka-info {
+        position: absolute;
+        top: 40%;
+    }
+    .galery,
+    .galery-foto {
+        height: 1050px
+    }
+    .galery-foto .swiper {
+        height: 500px!important;
+    }
+    .price-list .nav-control {
+        margin-top: 55%;
+    }
+    .price-list a {
+        height: 60px;
+        padding: 10px 0;
+    }
+    .prices {
+        padding: 20px 9%;
+    }
+    .prices .nav-control {
+        margin-top: 50%;
+    }
+    .our-doctors .swiper {
+        width: 100%;
+        margin: 0 0 50% 0;
+        padding: 0;
+    }
+    .our-doctors .swiper-slide {
+        width: 31%!important;
+        margin: 0 10px;
+        padding: 0;
+    }
+    .our-doctors-card {
+        width: 100%;
+    }
+    .our-doctors .swiper-button-next::after {
+        position: absolute;
+        left: 10px;
+        top: -10%;
+    }
+    .our-doctors .swiper-button-prev::after {
+        position: absolute;
+        top: -10%;
+    }
+    .doctors .swiper {
+        margin-bottom: 50%;
+    }
+    .doctors .swiper-slide{
+        padding: 0 0 0 5%;
+    }
+    .doctors .swiper-button-next::after {
+        position: absolute;
+        left: 5px;
+    }
+    .doctor-details {
+        flex-direction: column;
+        width: 100%;
+    }
+    .doctor-left {
+        flex-direction: row;
+        padding: 30px 10px;
+    }
+    .doctor-left button {
+        width: 200px;
+        margin: 0 10px 10px 10px;
+    }
+    .right-side {
+        margin-top: 30px
+    }
+    
+    .right-side .nav-control {
+        margin: 40% 0 0 27%; 
+    }
+    .right-side p {
+        font-size: 20px;
+        padding: 0 10px 0 0;
+    }
+    .right-side h5 {
+        font-size: 22px;
+    }
+}
+/* MOBILE */
+@media screen and ( 60px < width < 600px ) {
+    .header {
+        padding: 12px 20px;
+    }
+    .logo svg,
+    .logo p {
+        display: none;
+    }
+    .call span, .call p {
+        display: none;
+    }
+    .home > h3 {
+        margin: 0 0 70px 0;
+    }
+    .home-card {
+        margin-bottom: 15px;
+    }
+    .uslugi,
+    .price-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .uslugi div {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20%!important;
+    }
+    .uslugi div a,
+    .price-list a {
+        width: 90%;
+        margin: 10px 0;
+    }
+    .uslugi .nav-control {
+        margin: 0 0 0 14%;
+        display: flex;
+        flex-direction: row;
+    }
+    .about {
+        width: 100%;
+        padding: 10% 5%;
+    }
+    .about > p {
+        height: 450px;
+        margin-bottom: 12%;
+    }
+    .skidka,
+    .galery,
+    .doctors,
+    .galery-foto,
+    .score,
+    .price-list,
+    .prices,
+    .doctor-details,
+    .our-doctors {
+        width: 97%;
+        margin-top: 50px;
+    }
+    .our-doctors .swiper,
+    .doctors .swiper,
+    .skidka .swiper,
+    .galery .swiper,
+    .galery-foto .swiper,
+    .score .swiper {
+        width: 100%!important;
+        margin: 0 10px 0 0;
+    }
+    .our-doctors h3,
+    .doctor-details,
+    .doctors h3,
+    .skidka h3,
+    .skidka-details h3,
+    .galery h3,
+    .galery-foto h3,
+    .score h3,
+    .prices h3 {
+        margin: 20px 0 30px 20px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .skidka .swiper-slide,
+    .skidka-details .swiper-slide,
+    .galery .swiper-slide,
+    .galery-foto .swiper-slide,
+    .score .swiper-slide {
+        width: 96%!important;
+        margin: 0 2%;
+    }
+    .skidka .swiper-slide img,
+    .skidka-details .swiper-slide img,
+    .galery .swiper-slide img,
+    .galery-foto .swiper-slide img,
+    .score .swiper-slide img {
+        width: 100%!important;
+    }
+    .skidka .swiper-button-next::after,
+    .skidka-details .swiper-button-next::after,
+    .galery .swiper-button-next::after,
+    .galery-foto .swiper-button-next::after,
+    .score .swiper-button-next::after {
+        position: absolute;
+        left: 2px;
+    }
+    .skidka-details {
+        width: 100%;
+        padding: 10px;
+    }
+    .skidka-details .swiper  {
+        height: 250px;
+        margin-bottom: 0;
+    }
+    .skidka-details > p {
+        margin: 30px 20px;
+    }
+    .skidka-details .skidka-info {
+        position: absolute;
+        top: 40%;
+    }
+    .galery .swiper,
+    .galery-foto .swiper {
+        margin-bottom: 0;
+        height: 500px;
+    }
+    .galery-foto h3 {
+        font-size: 23px;
+    }
+    .price-list {
+        padding-left: 10%;
+    }
+    .price-list .nav-control {
+        margin-top: 15%;
+    }
+    .price-list a {
+        height: 60px;
+        padding-top: 10px;
+    }
+    .prices a {
+        width: 90%;
+    }
+    .our-doctors .swiper {
+        width: 100%;
+        margin: 0 0 20% 0;
+        padding: 0;
+    }
+    .our-doctors .swiper-slide {
+        width: 45%!important;
+        margin: 0 10px;
+        padding: 0;
+    }
+    .our-doctors-card {
+        width: 100%;
+    }
+    .our-doctors .swiper-button-next::after {
+        position: absolute;
+        left: 10px;
+        top: -10%;
+    }
+    .our-doctors .swiper-button-prev::after {
+        position: absolute;
+        top: -10%;
+    }
+    .doctors .swiper {
+        margin-bottom: 50%;
+    }
+    .doctors .swiper-slide{
+        padding: 0;
+    }
+    .doctors-card { 
+        width: 90%;
+    }
+    .doctors-info hr,
+    .doctors-info h4 {
+        width: 60%;
+    }
+    .doctors-info div {
+        width: 80%
+    }
+    .doctors-info div span {
+        display: flex;
+    }
+    .doctors-info div p {
+        font-size: 12px;
+    }
+    .doctors .swiper-button-next::after {
+        position: absolute;
+        left: 5px;
+    }
+    .doctor-details {
+        flex-direction: column;
+    }
+    .doctor-left {
+        flex-direction: row;
+        padding: 10px;
+    }
+    .doctor-left button {
+        width: 200px;
+        margin: 0 10px 10px 10px;
+    }
+    .right-side {
+        margin-top: 10px
+    }
+    .right-side h4,
+    .right-side > div,
+    .about-doctor h5,
+    .about-doctor p {
+        width: 90% !important;
+        font-size: 20px !important;
+    }
+    .doctor-info div {
+        display: none;
+    }
+    .right-side .nav-control {
+        margin: 20% 0 0 5%; 
+    }
+    .modalContainer,
+    .fotoModalContainer {
+        position: absolute;
+        width: 100%;
+        height: 421px;
+        left: 0;
+        top: calc(50% - 421px/2 + 9.5px);
+        background: #FFFFFF;
+        border-radius: 30px;
+    }
+    .modalContainer svg,
+    .fotoModalContainer svg {
+        left: 85%;
+        top: -15%;
+    }
+    .modalContainer span {
+        position: absolute;
+        width: 93%;
+        height: 36px;
+        left: 5%;
+        top: 30%;
+    }
+    .modalContainer p {
+        position: absolute;
+        width: 80%;
+        height: 22px;
+        left: 15%;
+        top: 45%;
+    }
+    .modalContainer button {
+        position: absolute;
+        width: 60%;
+        height: 40px;
+        left: 20%;
+        top: 75%;
+        padding: 10px 20%;
+    }
+    .stars {
+        width: 80%;
+        height: 40px;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 60% 0 0 5%;
+    }
+    .stars div p {
+        left: 125%;
+    }
+    .zapis-modal span {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        color: #E30613;
+    }
+}

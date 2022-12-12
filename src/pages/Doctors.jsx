@@ -13,12 +13,20 @@ const Doctors = () => {
     <div className="doctors">
       <h3>Фотогалерея / {doctors}</h3>
       <Swiper
-        slidesPerView={2}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={20}
+        spaceBetween={0}
+        navigation
         pagination={{ clickable: true }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          900: {
+            slidesPerView: 2,
+          },
+        }}
       >
         {doctors_list.map((item) => (
           <SwiperSlide key={item.id}>

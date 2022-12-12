@@ -12,13 +12,23 @@ const Skidka = () => {
     <div className="skidka">
       <h3>Акции</h3>
       <Swiper
-        slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={0}
         navigation
         pagination={{ clickable: true }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          600: {
+            slidesPerView: 2,
+          },
+          900: {
+            slidesPerView: 3,
+          },
+        }}
       >
         {skidka_data.map((item, i) => (
           <SwiperSlide key={i}>

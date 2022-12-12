@@ -19,13 +19,22 @@ const ScoreService = () => {
     <div className="score">
       <h3>Оценки услуг</h3>
       <Swiper
-        slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={0}
-        navigation
-        pagination={{ clickable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          modules={[Navigation, Pagination, Scrollbar, A11y]}
+          spaceBetween={0}
+          navigation
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            600: {
+              slidesPerView: 2,
+            },
+            900: {
+              slidesPerView: 3,
+            },
+          }}
       >
         {score_service.map((item) => (
           <SwiperSlide key={item.id}>

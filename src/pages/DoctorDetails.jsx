@@ -19,8 +19,10 @@ const DoctorDetails = () => {
         <div className='doctor-details'>
             <div className='doctor-left'>
                 <img src={doctor_details.image} />
-                <button className='btn1' onClick={() => setOpenModal2(true)}>Записаться</button>
-                <button className='btn2' onClick={() => modalOspen(doctor_details)}>Оставить отзыв </button>
+                <div>
+                    <button className='btn1' onClick={() => setOpenModal2(true)}>Записаться</button>
+                    <button className='btn2' onClick={() => modalOspen(doctor_details)}>Оставить отзыв </button>
+                </div>
             </div>
             <div className='right-side'>
                 <h4>{doctor_details.name}</h4>

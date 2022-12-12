@@ -13,12 +13,25 @@ const FotoGalereya = () => {
     <div className="galery">
       <h3>Фотогалерея</h3>
       <Swiper
-        slidesPerView={3}
         onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={10}
-        pagination={{ clickable: true }}
+              onSwiper={(swiper) => console.log(swiper)}
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              navigation
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 0,
+                },
+                600: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+
+                },
+                900: {
+                  slidesPerView: 3,
+                  spaceBetween: 10,
+                },
+              }}
       >
         {galery_data.map((item, i) => (
           <SwiperSlide key={i}>

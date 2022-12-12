@@ -1,5 +1,5 @@
 import  { useState, useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper"
 import NavControl from "../components/NavControl"
@@ -8,14 +8,13 @@ import { skidka_details, skidka_data } from '../assets/data'
 
 const SkidkaDetails = () => {
 
-    const { id } = useParams()
+    const navigate = useNavigate()
+    const { id, name } = useParams()
     const [data, setData] = useState([])
 
     useEffect(() => {
         setData(skidka_data.filter(item => item.id *1 !== id*1))
     }, [id])
-
-    console.log(data)
 
     return(
         <div className='skidka-details'>
@@ -23,15 +22,25 @@ const SkidkaDetails = () => {
             <p>{skidka_details.text}</p>
             <h3 style={{marginTop: '30px'}}>Другие акции</h3>
             <Swiper
-        slidesPerView={3}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={0}
-        navigation
+              onSlideChange={() => console.log("slide change")}
+              onSwiper={(swiper) => console.log(swiper)}
+              modules={[Navigation, Pagination, Scrollbar, A11y]}
+              spaceBetween={0}
+              navigation
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                },
+                600: {
+                  slidesPerView: 2,
+                },
+                900: {
+                  slidesPerView: 3,
+                },
+              }}
       >
         {data.map((item, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={i} onClick={() => navigate(`/uslugi/${name}/aksi/${item.id}`)}>
             <img src={skidka2} alt="image" className='skidka-img'/>
             <p style={{width: '300px'}}>{item.title}</p>
             <div className='skidka-info'>
